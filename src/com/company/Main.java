@@ -9,7 +9,7 @@ public class Main {
         Scanner num = new Scanner(System.in);
         int first = 0,second = 0;
         char operation;
-        System.out.print("Введите первое число: " );
+        System.out.print("Введите первое числопп: " );
         first = num.nextInt();
 
         System.out.print("Введите второе число: " );
