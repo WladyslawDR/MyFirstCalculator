@@ -9,13 +9,13 @@ public class Main {
         Scanner num = new Scanner(System.in);
         int first = 0,second = 0;
         char operation;
-        System.out.print("Танечка,введи первое число: " );
+        System.out.print("Введите первое число: " );
         first = num.nextInt();
 
-        System.out.print("Танюська, введи второе число: " );
+        System.out.print("Введите второе число: " );
         second = num.nextInt();
 
-        System.out.print("Введи операцию: " );
+        System.out.print("Введите операцию: " );
         operation = num.next().charAt(0);
         int result = 0;
         switch (operation) {
@@ -33,7 +33,7 @@ public class Main {
                 break;
             default:
         }
-        System.out.print("Урааааа! У тебя получилось: " + result);
+        System.out.print("Урааааа! У Вас получилось: " + result);
 }
 
 
