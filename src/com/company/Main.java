@@ -7,17 +7,27 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner num = new Scanner(System.in);
-        int first = 0,second = 0;
+        int first = 0,second = 0, result = 0;
         char operation;
+
         System.out.print("Введите первое число: " );
-        first = num.nextInt();
+        if(num.hasNextInt()){
+            first = num.nextInt();
+        } else {
+            System.out.println ("Неправильный ввод, повторите еще раз: ");
+        }
 
-        System.out.print("Введите второе число: " );
-        second = num.nextInt();
-
-        System.out.print("Введите операцию: " );
+        System.out.println("Введите операцию: " );
         operation = num.next().charAt(0);
-        int result = 0;
+
+        System.out.print("Введите второе число: ");
+        if(num.hasNextInt()){
+            second = num.nextInt();
+        } else {
+            System.out.println ("Неправильный ввод, повторите еще раз: ");
+        }
+
+
         switch (operation) {
             case '+':
                 result = first + second;
@@ -33,7 +43,7 @@ public class Main {
                 break;
             default:
         }
-        System.out.print("Урааааа! У Вас получилось: " + result);
+        System.out.print("Результат: " + result);
 }
 
 
